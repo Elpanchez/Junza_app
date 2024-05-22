@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/foro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+    <title>Foro Comunitario</title>
+</head>
+<body>
+    <section class="forum">
+        <h1>Foro Comunitario</h1>
+        <button class="home-button" id="home">
+            <i class="fas fa-home"></i>
+        </button>
+        <div class="forum__container">
+            <div id="questions">
+                <!-- Pregunta de ejemplo -->
+                <div class="question" data-id="0">
+                    <h2>Bienvenido al foro de la comunidad!</h2>
+                    <p>Este espacio está diseñado para que puedas interactuar con otros usuarios, puedes preguntar por consejos o ayudar a los demás usuarios con sus inquietudes.</p>
+                    <div class="responses" id="responses-0">
+                        <!-- Respuestas se insertarán aquí -->
+                    </div>
+                    <form class="responseForm" data-id="0">
+                        <input type="text" class="responseAuthor" placeholder="Aquí estará tu nombre de usuario" required>
+                        <textarea class="responseContent" placeholder="Aquí podras escribir lo que quieras decirle a los demás" required></textarea>
+                        <button type="submit">Responder</button>
+                    </form>
+                </div>
+            </div>
+            <div class="new-question">
+                <h2>Nueva Pregunta</h2>
+                <form id="questionForm">
+                    <input type="text" id="questionTitle" placeholder="Título de la pregunta" required>
+                    <textarea id="questionContent" placeholder="Detalles de la pregunta" required></textarea>
+                    <input type="text" id="questionAuthor" placeholder="Tu nombre" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="../js/foro.js"></script>
+</body>
+</body>
+</html>

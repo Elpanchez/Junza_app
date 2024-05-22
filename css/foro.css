@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+:root {
+    --white: #fafafb;
+    --grisoscuro:#252b28;
+    --verdefirme:#5eb686;
+    --blue-dark:#858585;
+    --purple: #7934c7;
+    --eliminar: #b12323;
+    --otroverdefirme: #4a9c7a;
+ 
+ }
+ 
+ body {
+     background: linear-gradient(to bottom,var(--grisoscuro),var(--otroverdefirme));  
+     margin: 0;
+     min-height: 100vh;
+     padding: 1rem;
+
+ }
+
+ .home-button {
+    background-color:var(--verdefirme);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.home-button i {
+    margin-right: 8px;
+}
+
+.home-button:hover {
+    background-color: #35bfb8;
+}
+
+.forum {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.forum__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.question, .new-question {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.question h2, .new-question h2 {
+    margin-top: 0;
+}
+
+.question p {
+    margin: 5px 0 0;
+}
+
+.new-question form, .responseForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-question input, .new-question textarea, .responseForm input, .responseForm textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.new-question button, .responseForm button {
+    padding: 10px;
+    border: none;
+    background-color: #35bfb8;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-question button:hover, .responseForm button:hover {
+    background-color: #35bfb8;
+}
+
+.responses {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.response {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}

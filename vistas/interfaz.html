@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/interfaz.css">
+    <title>Junza</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar_bienvenida">
+            <button class="btn" id="foro">Foro comunitario</button>
+            
+            <div>
+                <h1 class="heading">Hola</h1>
+                <p id="saldo" class="subheading"></p>
+            </div>
+            <div class="chart-container">
+                <canvas id="myPieChart"></canvas>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="grid" id="grid">
+                <div class="card" id="card-ingresos">
+                    <h2 class="card-title">Ingresos</h2>
+                    <form>
+                        <input type="text" name="nombre" placeholder="Nombre del ingreso" required>
+                        <input type="number" name="cantidad" placeholder="Cantidad" required>
+                        <button type="submit" class="btn">Agregar</button>
+                    </form>
+                    <div id="montos" class="montos"></div>
+                </div>
+                <div class="card" id="card-gastos">
+                    <h2 class="card-title">Gastos</h2>
+                    <form>
+                        <input type="text" name="nombre" placeholder="Nombre del gasto" required>
+                        <input type="number" name="cantidad" placeholder="Cantidad" required>
+                        <button type="submit" class="btn">Agregar</button>
+                    </form>
+                    <div id="montos" class="montos"></div>
+                </div>
+            </div>
+
+                <div class="dropdown">
+                  <button id="dropdownButton" class="btn">Opciones</button>
+                  <div id="dropdownContent" class="dropdown-content">
+                    <button class="dropdown-item" id="option1">Opcion 1</button>
+                    <button class="dropdown-item" id="option2">Opcion 2</button>
+                    <button class="dropdown-item" id="option3">Opcion 3</button>
+                  </div>
+                </div>
+        </div>
+        <div class="logout_section">
+            <button class="btn self-end" id="cerrar_sesion">Logout</button>
+        </div> 
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>
+                Junza nació de una necesidad personal y profesional de gestionar las finanzas de manera eficiente y sencilla. Como cofundadores, mi compañero y yo, ambos estudiantes universitarios apasionados por la tecnología y la economía,
+                combinamos nuestros nombres y conocimientos para crear una solución que realmente hiciera la diferencia. La idea surgió en una conversación sobre cómo nuestras experiencias y habilidades podían contribuir a resolver problemas cotidianos.
+                Identificamos que muchas personas, como nosotros, luchaban con el seguimiento de sus ingresos, gastos y ahorros de manera organizada. Decidimos entonces crear Junza, un software de gestión financiera personal que no solo fuera fácil de usar,
+                sino que también ofreciera herramientas avanzadas para quienes desearan llevar un control más detallado de sus finanzas. A lo largo del desarrollo, nos centramos en crear una aplicación intuitiva y accesible, incorporando funcionalidades
+                basadas en las necesidades reales de los usuarios. Junza representa nuestra visión de cómo la tecnología puede simplificar la vida financiera de las personas, permitiéndoles tomar decisiones informadas y alcanzar sus metas económicas.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="sidebar">
+            <div class="card_medios">
+                <h3 class="card-title">Medios de contactos</h3>
+                <p>Correo: santiagosanchez.ribero@gmail.com</p>
+                <p>Tel: +57 322 2251036</p>
+                <a href="preguntasFrecuentes.html" class="link">Preguntas Frecuentes</a><br>
+                <a href="#" id="openModal" class="link">Nosotros</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/interfaz.js"></script>
+</body>
+</html>

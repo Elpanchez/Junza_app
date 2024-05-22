@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>JUNZA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <form id="loginForm">
+            <h1>Inicio</h1>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="text" id="username" required>
+                <label for="">Usuario</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="password" id="password" required>
+                <label for="">Contraseña</label>
+            </div>
+            <div class="forget">
+                <label for=""><input type="checkbox">Recordar</label>
+                <a href="vistas/contraseña.html">Olvide contraseña</a>
+            </div>
+            <button type="submit" id="interfaz">Iniciar</button>
+            <div class="registrar">
+                <p>No tengo cuenta <a href="vistas/registrarse.html">Registrate</a></p>
+            </div>
+        </form>
+    </section>
+    <script src="./js/login.js"></script>
+</body>
+</html>

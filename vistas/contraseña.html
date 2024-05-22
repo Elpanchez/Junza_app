@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contraseña.css">
+    <title>Recuperar contraseña</title>
+</head>
+<body>
+    <section>
+        <form id="recoverForm">
+            <h1>Recuperar contraseña</h1>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="text" id="username" required>
+                <label for="">Usuario</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" id="newPassword" required>
+                <label for="">Nueva contraseña</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" id="confirmPassword" required>
+                <label for="">Confirmar contraseña</label>
+            </div>
+            <button type="submit" class="contraseña" id="recuperar_contraseña">Confirmar</button>
+        </form>
+    </section>
+    <script src="../js/contraseña.js"></script>
+</body>
+</html>
